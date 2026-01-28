@@ -1,12 +1,29 @@
+:root {
+  /* Chalk color palette */
+  --chalk-white: #e8e6e3;
+  --chalk-light: #c9c5c0;
+  --chalk-muted: #9a948c;
+  --chalk-dim: #6b665f;
+  --chalk-dark: #3d3a36;
+  --bg-dark: #1a1918;
+  --bg-card: #242321;
+  --border-subtle: #3d3a36;
+
+  /* Status colors - muted chalk versions */
+  --status-good: #8fae8b;
+  --status-warn: #c9b88a;
+  --status-bad: #b38b8b;
+}
+
 body {
-  width: 300px;
-  height: 260px;
+  width: 320px;
+  height: auto;
+  min-height: 360px;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'SF Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
+  background-color: var(--bg-dark);
+  color: var(--chalk-white);
   position: relative;
 }

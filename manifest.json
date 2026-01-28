@@ -1,18 +1,12 @@
 {
   "manifest_version": 3,
-  "name": "name in manifest.json",
-  "description": "description in manifest.json",
-  "options_ui": {
-    "page": "src/pages/options/index.html"
-  },
+  "name": "VPN Check",
+  "description": "Check if VPN is connected",
   "action": {
     "default_popup": "src/pages/popup/index.html",
     "default_icon": {
       "32": "icon-32.png"
     }
-  },
-  "chrome_url_overrides": {
-    "newtab": "src/pages/newtab/index.html"
   },
   "icons": {
     "128": "icon-128.png"
@@ -20,26 +14,14 @@
   "permissions": [
     "activeTab"
   ],
-  "content_scripts": [
-    {
-      "matches": [
-        "http://*/*",
-        "https://*/*",
-        "<all_urls>"
-      ],
-      "js": [
-        "src/pages/content/index.tsx"
-      ],
-      "css": [
-        "contentStyle.css"
-      ]
-    }
+  "host_permissions": [
+    "https://ipwho.is/*",
+    "https://www.cloudflare.com/*",
+    "https://api.cohere.com/*"
   ],
-  "devtools_page": "src/pages/devtools/index.html",
   "web_accessible_resources": [
     {
       "resources": [
-        "contentStyle.css",
         "icon-128.png",
         "icon-32.png"
       ],
