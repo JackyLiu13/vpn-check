@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "VPN Check",
-  "description": "Check if VPN is connected",
+  "description": "Jacky's Private VPN Check",
   "action": {
     "default_popup": "src/pages/popup/index.html",
     "default_icon": {
